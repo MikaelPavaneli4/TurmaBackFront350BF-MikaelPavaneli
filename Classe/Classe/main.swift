@@ -44,14 +44,14 @@ class Cachorro {
     
     func correr(){
         print("O cachorro está correndo")
-     }
+    }
     
     func latir(){
         print("O cachorro está latindo")
         
     }
     
-
+}
 
 
 
