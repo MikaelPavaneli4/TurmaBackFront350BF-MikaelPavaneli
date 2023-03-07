@@ -32,3 +32,29 @@ class Automovel {
         print("O carro está ligado")
     }
 }
+
+
+class Cachorro {
+    
+    var corDoPelo: String = "caramelo"
+    var quantidadeDeOlhos: Int = 2
+    var comida: String = "Ração"
+    var raça: String = "Doberman"
+    var quantidadeDePatas: Int = 4
+    
+    func correr(){
+        print("O cachorro está correndo")
+     }
+    
+    func latir(){
+        print("O cachorro está latindo")
+        
+    }
+    
+
+
+
+
+
+
+
