@@ -37,7 +37,7 @@ class Automovel {
 class Cachorro {
     
     var corDoPelo: String = "caramelo"
-    var quantidadeDeOlhos: Int = 2
+    var pesoDoCachorro: Double = 20.00
     var comida: String = "Ração"
     var raça: String = "Doberman"
     var quantidadeDePatas: Int = 4
@@ -50,9 +50,7 @@ class Cachorro {
         print("O cachorro está latindo")
         
     }
-    
 }
-
 
 
 
