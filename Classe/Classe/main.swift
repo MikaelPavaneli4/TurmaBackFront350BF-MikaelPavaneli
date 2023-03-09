@@ -92,6 +92,13 @@ class Pessoa {
     }
 }
 
+class Bicicleta {
+    
+    
+    
+    
+}
+
 var caio: Pessoa = Pessoa(nome: "Caio", altura: 1.84, peso: 84, tamanhoCalcado: 44)
 var matheus: Pessoa = Pessoa(nome: "Matheus", altura: 1.65, peso: 69, tamanhoCalcado: 40)
 //print(caio.nome)
@@ -128,4 +135,12 @@ print(matheus.nome)
 
 
 
+class Casa{
+    
+    var comida = 10
+    
+    
+    
+}
 
+print(Casa.comida)
