@@ -92,6 +92,8 @@ class Pessoa {
     }
 }
 
+
+
 var caio: Pessoa = Pessoa(nome: "Caio", altura: 1.84, peso: 84, tamanhoCalcado: 44)
 var matheus: Pessoa = Pessoa(nome: "Matheus", altura: 1.65, peso: 69, tamanhoCalcado: 40)
 //print(caio.nome)
@@ -125,6 +127,37 @@ matheus.nome = "Jorge"
 
 print(caio.nome)
 print(matheus.nome)
+
+
+class Casa {
+    
+    var aparelhosElet: Int
+    var comidas: Int
+    var qualidadeMoveis: Double
+    var moveis: Int
+    
+    init(aparelhosElet: Int, comidas: Int, qualidadeMoveis: Double, moveis: Int){
+        self.aparelhosElet = aparelhosElet
+        self.comidas = comidas
+        self.qualidadeMoveis = qualidadeMoveis
+        self.moveis = moveis
+    }
+}
+
+var casa1 = Casa(aparelhosElet: 10, comidas: 20, qualidadeMoveis: 75.85, moveis: 18)
+print(casa1.comidas)
+
+
+var casa2 = Casa(aparelhosElet: 15, comidas: 3, qualidadeMoveis: 48.10, moveis: 6)
+print(casa2.aparelhosElet)
+
+casa2 = casa1
+print(casa1.qualidadeMoveis)
+
+
+
+
+
 
 
 
