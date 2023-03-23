@@ -24,16 +24,16 @@ class ViewController: UIViewController {
         emailTextField.placeholder = "Coloque seu email"
         senhaTextField.placeholder = "Coloque sua senha"
         nameTextField.layer.borderWidth = 2
-        nameTextField.layer.borderColor = UIColor.red.cgColor
+        nameTextField.layer.borderColor = UIColor.lightGray.cgColor
         senhaTextField.layer.borderWidth = 2
-        senhaTextField.layer.borderColor = UIColor.red.cgColor
+        senhaTextField.layer.borderColor = UIColor.lightGray.cgColor
         emailTextField.layer.borderWidth = 2
-        emailTextField.layer.borderColor = UIColor.red.cgColor
+        emailTextField.layer.borderColor = UIColor.lightGray.cgColor
         view.layer.backgroundColor = UIColor.black.cgColor
         cadastroButton.isEnabled = false
         confirmarSenhaTextField.placeholder = "Confirme sua senha"
         confirmarSenhaTextField.layer.borderWidth = 2
-        confirmarSenhaTextField.layer.borderColor = UIColor.red.cgColor
+        confirmarSenhaTextField.layer.borderColor = UIColor.lightGray.cgColor
     }
     
     @IBAction func cadastroButton(_ sender: UIButton) {
@@ -55,8 +55,8 @@ extension ViewController: UITextFieldDelegate {
         }else{
             confirmarSenhaTextField.layer.borderColor = UIColor.blue.cgColor
         }
-         
-            
+        
+        
         
         
     }
@@ -92,20 +92,27 @@ extension ViewController: UITextFieldDelegate {
             senhaTextField.layer.borderColor = UIColor.red.cgColor
             confirmarSenhaTextField.layer.borderColor = UIColor.red.cgColor
         }
-        
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print("textFieldShouldReturn")
-        textField.resignFirstResponder()
         if nameTextField.hasText == true && emailTextField.hasText == true && senhaTextField.hasText == true && confirmarSenhaTextField.hasText == true && confirmarSenhaTextField.text == senhaTextField.text{
             cadastroButton.isEnabled = true
         }else{
             cadastroButton.isEnabled = false
         }
+    }
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            print("textFieldShouldReturn")
+            if textField == nameTextField{
+                emailTextField.becomeFirstResponder()
+            }else if textField == emailTextField{
+                senhaTextField.becomeFirstResponder()
+            }else if textField == senhaTextField{
+                confirmarSenhaTextField.becomeFirstResponder()
+            }else{
+                textField.resignFirstResponder()
+            }
             return true
-        
+            
+            
+        }
         
     }
-    
-}
+
