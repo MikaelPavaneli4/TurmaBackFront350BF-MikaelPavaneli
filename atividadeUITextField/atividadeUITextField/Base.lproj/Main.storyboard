@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="atividadeUITextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ga3-wI-AGW">
+                                <rect key="frame" x="25" y="84" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u5z-2a-gEr">
+                                <rect key="frame" x="25" y="143" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FL1-Yu-IEL">
+                                <rect key="frame" x="25" y="202" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKE-Gq-8s1">
+                                <rect key="frame" x="145" y="286" width="103" height="34.333333333333314"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cadastrar"/>
+                                <connections>
+                                    <action selector="cadastroButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HxN-lB-go4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="ga3-wI-AGW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="1Dp-6o-1bR"/>
+                            <constraint firstItem="u5z-2a-gEr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="4AF-5o-2RM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WKE-Gq-8s1" secondAttribute="trailing" constant="145" id="4eM-ke-oDO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FL1-Yu-IEL" secondAttribute="trailing" constant="25" id="MQg-ws-FfJ"/>
+                            <constraint firstItem="u5z-2a-gEr" firstAttribute="top" secondItem="ga3-wI-AGW" secondAttribute="bottom" constant="25" id="NWQ-0P-GYz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u5z-2a-gEr" secondAttribute="trailing" constant="25" id="WDI-ct-4Ov"/>
+                            <constraint firstItem="WKE-Gq-8s1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="aFt-KV-iin"/>
+                            <constraint firstItem="FL1-Yu-IEL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="blz-xB-ARE"/>
+                            <constraint firstItem="FL1-Yu-IEL" firstAttribute="top" secondItem="u5z-2a-gEr" secondAttribute="bottom" constant="25" id="jT4-2w-TFi"/>
+                            <constraint firstItem="WKE-Gq-8s1" firstAttribute="top" secondItem="FL1-Yu-IEL" secondAttribute="bottom" constant="50" id="l0m-hx-0Sg"/>
+                            <constraint firstItem="ga3-wI-AGW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="rr0-eu-ZBA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ga3-wI-AGW" secondAttribute="trailing" constant="25" id="uLe-xh-mxb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cadastroButton" destination="WKE-Gq-8s1" id="aSn-b1-jHD"/>
+                        <outlet property="emailTextField" destination="u5z-2a-gEr" id="OWg-Pf-1ob"/>
+                        <outlet property="nameTextField" destination="ga3-wI-AGW" id="xkB-3K-gGM"/>
+                        <outlet property="senhaTextField" destination="FL1-Yu-IEL" id="1GT-IO-5XC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
