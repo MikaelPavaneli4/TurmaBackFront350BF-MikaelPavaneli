@@ -88,17 +88,16 @@ extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         print("textFieldShouldReturn")
         
-        if textField == nameTextField{
-            emailTextField.becomeFirstResponder()
-        }else if textField == emailTextField{
-            senhaTextField.becomeFirstResponder()
-        }else{
-            textField.resignFirstResponder()
-            
-        }
-            return true
+        textField.resignFirstResponder()
+       // if textField == nameTextField{
+         //   emailTextField.becomeFirstResponder()
+       // }else if textField == emailTextField{
+        //    senhaTextField.becomeFirstResponder()
+       // }else{
         
+        return true
         
     }
+    }
     
-}
+
