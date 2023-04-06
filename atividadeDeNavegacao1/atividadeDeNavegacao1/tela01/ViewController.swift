@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var entrarButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Tela Root"
         // Do any additional setup after loading the view.
     }
 

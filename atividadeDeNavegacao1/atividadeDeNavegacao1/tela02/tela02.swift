@@ -18,6 +18,7 @@ class tela02: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configBackButton()
+        title = "Tela02"
         }
     
     @IBAction func backButton(_ sender: UIButton) {

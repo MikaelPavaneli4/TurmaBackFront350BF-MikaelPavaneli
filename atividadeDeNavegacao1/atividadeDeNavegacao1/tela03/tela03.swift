@@ -15,8 +15,10 @@ class tela03: UIViewController {
     @IBOutlet weak var avancarTela03Button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Tela03"
         configVoltarTela03Button()
         configAvancarTela03Button()
+        title = "Tela03"
     }
     
     @IBAction func voltarTela03Button(_ sender: UIButton) {

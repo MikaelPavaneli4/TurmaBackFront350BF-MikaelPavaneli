@@ -16,6 +16,7 @@ class tela04: UIViewController {
         super.viewDidLoad()
         configVoltarTela04Button()
         configAvancarTela04Button()
+       title = "Tela04"
         // Do any additional setup after loading the view.
     }
     

@@ -12,7 +12,7 @@ class tela06: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+title = "Tela06"
         // Do any additional setup after loading the view.
     }
     

@@ -19,7 +19,7 @@ class tela05: UIViewController {
         super.viewDidLoad()
         configVoltarTela05Button()
         configAvancarTela05Button()
-        
+        title = "Tela05"
         // Do any additional setup after loading the view.
     }
     
