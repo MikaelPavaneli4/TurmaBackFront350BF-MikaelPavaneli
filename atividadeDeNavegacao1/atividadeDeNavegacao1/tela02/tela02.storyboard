@@ -36,18 +36,27 @@
                                     <action selector="avancarTela02Button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HIL-Ob-mz6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuO-d6-lXo">
+                                <rect key="frame" x="176" y="218" width="41.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
+                            <constraint firstItem="wuO-d6-lXo" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ezp-AX-tSm"/>
                             <constraint firstItem="3um-w3-ilu" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="fG6-Z5-pIw"/>
                             <constraint firstItem="In0-FK-ekP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="fIc-zr-WdH"/>
+                            <constraint firstItem="wuO-d6-lXo" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="159" id="hJy-PU-3WJ"/>
                             <constraint firstItem="3um-w3-ilu" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="jqh-OB-1e7"/>
                             <constraint firstItem="In0-FK-ekP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="xMN-Ge-9dm"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="In0-FK-ekP" id="g9A-sO-FHP"/>
+                        <outlet property="nameLabel" destination="wuO-d6-lXo" id="R3j-0E-Rtr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

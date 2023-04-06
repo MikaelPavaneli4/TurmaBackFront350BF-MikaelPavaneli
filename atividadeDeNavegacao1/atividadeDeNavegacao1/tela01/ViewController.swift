@@ -8,7 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var dadosTextField: UITextField!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+        // navigationController?.navigationBar.isHidden = false
+    }
     @IBOutlet weak var entrarButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,9 +23,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func entrarButton(_ sender: UIButton) {
-        let vc: UIViewController? = UIStoryboard(name: "tela02", bundle: nil).instantiateViewController(withIdentifier: "tela02") as? tela02
+        let vc: tela02? = UIStoryboard(name: "tela02", bundle: nil).instantiateViewController(withIdentifier: "tela02") as? tela02
         navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
-        
+        vc?.name = dadosTextField.text ?? ""
        // MARK: caso vc querira colocar sua tela modal em full Screen
        // vc?.modalPresentationStyle = .fullScreen
     }

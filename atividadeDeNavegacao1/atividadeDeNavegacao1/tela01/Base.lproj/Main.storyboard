@@ -24,16 +24,28 @@
                                     <action selector="entrarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lGp-p8-Wtc"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6l-hN-AOS">
+                                <rect key="frame" x="25" y="128" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xJ8-Vb-0d5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
+                            <constraint firstItem="r6l-hN-AOS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="0cQ-KH-Okh"/>
                             <constraint firstItem="uBw-PD-CD1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5CS-Pr-XYZ"/>
                             <constraint firstItem="uBw-PD-CD1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QhY-yD-6ld"/>
+                            <constraint firstItem="r6l-hN-AOS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="RYi-09-CR9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r6l-hN-AOS" secondAttribute="trailing" constant="25" id="gnf-OG-tkx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Nif-ui-raR"/>
                     <connections>
+                        <outlet property="dadosTextField" destination="r6l-hN-AOS" id="rIJ-HP-8Dt"/>
                         <outlet property="entrarButton" destination="uBw-PD-CD1" id="7ZB-a0-iHN"/>
                     </connections>
                 </viewController>

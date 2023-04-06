@@ -14,9 +14,13 @@ import UIKit
 class tela02: UIViewController {
   
     
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var backButton: UIButton!
+    var name: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameLabel.text = name 
         configBackButton()
         title = "Tela02"
         }
