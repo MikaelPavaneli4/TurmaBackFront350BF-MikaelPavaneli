@@ -15,9 +15,36 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1z-b5-k5q">
+                                <rect key="frame" x="116" y="408.66666666666669" width="161" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Voltar a tela home"/>
+                                <connections>
+                                    <action selector="voltarHomeTela06Button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PfP-KI-hE9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09x-E1-YEt">
+                                <rect key="frame" x="25" y="59" width="68.666666666666671" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Voltar"/>
+                                <connections>
+                                    <action selector="voltarTela06Button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zxH-tc-wd1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="p1z-b5-k5q" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="44R-Ak-mAt"/>
+                            <constraint firstItem="p1z-b5-k5q" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="BJH-Gs-2A3"/>
+                            <constraint firstItem="09x-E1-YEt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="WCM-1b-ER0"/>
+                            <constraint firstItem="09x-E1-YEt" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="epA-mn-BgJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="voltarTela06Button" destination="09x-E1-YEt" id="ABA-Qi-14x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

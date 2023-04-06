@@ -9,21 +9,34 @@ import UIKit
 
 class tela03: UIViewController {
 
+    
+    @IBOutlet weak var voltarTela03Button: UIButton!
+    
+    @IBOutlet weak var avancarTela03Button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configVoltarTela03Button()
+        configAvancarTela03Button()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func voltarTela03Button(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
     }
-    */
-
+    
+    
+    @IBAction func avancarTela03Button(_ sender: UIButton) {
+        
+        let vc: UIViewController? = UIStoryboard(name: "tela04", bundle: nil).instantiateViewController(withIdentifier: "tela04") as? tela04
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+    }
+    
+    
+    func configVoltarTela03Button(){
+        voltarTela03Button.titleLabel?.text = "Voltar"
+    }
+    
+    func configAvancarTela03Button(){
+        
+        avancarTela03Button?.setTitle("ir tela04", for: .normal)
+    }
 }

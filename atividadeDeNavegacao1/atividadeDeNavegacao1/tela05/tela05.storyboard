@@ -15,9 +15,37 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmQ-DL-YRQ">
+                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="avancarTela05Button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Cuk-Hz-uqu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mW-9W-waC">
+                                <rect key="frame" x="25" y="59" width="68.666666666666671" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Voltar"/>
+                                <connections>
+                                    <action selector="voltarTela05Button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eaQ-To-1OH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="9mW-9W-waC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="99z-DJ-BnC"/>
+                            <constraint firstItem="XmQ-DL-YRQ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Bwm-zm-MHP"/>
+                            <constraint firstItem="9mW-9W-waC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="Nqa-4E-rdc"/>
+                            <constraint firstItem="XmQ-DL-YRQ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="pZD-A4-3zO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avancarTela05Button" destination="XmQ-DL-YRQ" id="Kts-c1-t5F"/>
+                        <outlet property="voltarTela05Button" destination="9mW-9W-waC" id="S8Y-QM-ETI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

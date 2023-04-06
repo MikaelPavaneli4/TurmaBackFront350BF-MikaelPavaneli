@@ -9,13 +9,43 @@ import UIKit
 
 class tela05: UIViewController {
 
+   
+    @IBOutlet weak var voltarTela05Button: UIButton!
+    
+    
+    @IBOutlet weak var avancarTela05Button: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configVoltarTela05Button()
+        configAvancarTela05Button()
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func voltarTela05Button(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
+    @IBAction func avancarTela05Button(_ sender: UIButton) {
+        
+        let vc: UIViewController? = UIStoryboard(name: "tela06", bundle: nil).instantiateViewController(withIdentifier: "tela06") as? tela06
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+    }
+    
+    func configVoltarTela05Button(){
+        
+        voltarTela05Button.titleLabel?.textColor = .black
+    }
+    
+    func configAvancarTela05Button(){
+        
+        avancarTela05Button?.setTitle("ir tela06", for: .normal)
+        
+    }
+    
     /*
     // MARK: - Navigation
 

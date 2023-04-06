@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="In0-FK-ekP">
-                                <rect key="frame" x="165.66666666666666" y="408.66666666666669" width="62" height="35"/>
+                                <rect key="frame" x="25" y="59" width="62" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -26,12 +26,24 @@
                                     <action selector="backButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bmL-JG-mcr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3um-w3-ilu">
+                                <rect key="frame" x="153.33333333333334" y="408.66666666666669" width="86.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ir tela03">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="avancarTela02Button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HIL-Ob-mz6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                         <constraints>
-                            <constraint firstItem="In0-FK-ekP" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Qjj-wD-LS8"/>
-                            <constraint firstItem="In0-FK-ekP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="v5e-xY-AK4"/>
+                            <constraint firstItem="3um-w3-ilu" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="fG6-Z5-pIw"/>
+                            <constraint firstItem="In0-FK-ekP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="fIc-zr-WdH"/>
+                            <constraint firstItem="3um-w3-ilu" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="jqh-OB-1e7"/>
+                            <constraint firstItem="In0-FK-ekP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="xMN-Ge-9dm"/>
                         </constraints>
                     </view>
                     <connections>

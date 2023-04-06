@@ -22,13 +22,19 @@ class tela02: UIViewController {
     
     @IBAction func backButton(_ sender: UIButton) {
         
-        dismiss(animated: true)
+        navigationController?.popViewController(animated: true)
         
     }
     
+    @IBAction func avancarTela02Button(_ sender: UIButton) {
+        
+        let vc: UIViewController? = UIStoryboard(name: "tela03", bundle: nil).instantiateViewController(withIdentifier: "tela03") as? tela03
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+        
+    }
     func configBackButton() {
         
-        backButton.titleLabel?.text = "Voltar"
+        backButton.setTitle("Voltar", for: .normal)
         
         
     }

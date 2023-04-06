@@ -16,16 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rG-mB-oK2">
-                                <rect key="frame" x="159" y="409" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rG-mB-oK2">
+                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="avancarTela03Button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BkP-xL-7XY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcf-zb-2yG">
+                                <rect key="frame" x="25" y="59" width="68.666666666666671" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Voltar"/>
+                                <connections>
+                                    <action selector="voltarTela03Button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UUK-mf-XBs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="2rG-mB-oK2" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="85M-Fg-WWH"/>
+                            <constraint firstItem="gcf-zb-2yG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="KVg-IN-Zhv"/>
+                            <constraint firstItem="gcf-zb-2yG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="l6k-Av-Nbo"/>
+                            <constraint firstItem="2rG-mB-oK2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="o5M-Gq-zvK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avancarTela03Button" destination="2rG-mB-oK2" id="dJG-Sf-lRk"/>
+                        <outlet property="voltarTela03Button" destination="gcf-zb-2yG" id="YIM-pV-nOf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
