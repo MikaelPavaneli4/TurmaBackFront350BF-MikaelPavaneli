@@ -35,22 +35,11 @@
                     <navigationItem key="navigationItem" id="Nif-ui-raR"/>
                     <connections>
                         <outlet property="entrarButton" destination="uBw-PD-CD1" id="7ZB-a0-iHN"/>
-                        <segue destination="3M1-m0-x7g" kind="show" identifier="tela02" id="OW1-LT-6FA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
-        </scene>
-        <!--tela02-->
-        <scene sceneID="JOz-Jf-5bl">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="tela02" storyboardName="tela02" id="3M1-m0-x7g" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="uUS-9g-3X9"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kwi-ks-6nU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1652.6717557251907" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>

@@ -16,8 +16,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func entrarButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "tela02", sender: nil)
-        
+        let vc: tela02? = UIStoryboard(name: "tela02", bundle: nil).instantiateViewController(withIdentifier: "tela02") as? tela02
+        present(vc ?? UIViewController(), animated: true)
+       // MARK: caso vc querira colocar sua tela modal em full Screen
+        vc?.modalPresentationStyle = .fullScreen
     }
     
 }
