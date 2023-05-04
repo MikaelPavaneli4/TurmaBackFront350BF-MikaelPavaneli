@@ -15,8 +15,29 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6RP-MO-OeH">
+                                <rect key="frame" x="25" y="84" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrS-ow-UDF">
+                                <rect key="frame" x="175" y="168" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6RP-MO-OeH" secondAttribute="trailing" constant="25" id="MkC-Il-cDg"/>
+                            <constraint firstItem="6RP-MO-OeH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="OlL-V1-SXM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="BrS-ow-UDF" secondAttribute="trailing" constant="176" id="R6R-K1-cM5"/>
+                            <constraint firstItem="6RP-MO-OeH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="SNs-KW-86d"/>
+                            <constraint firstItem="BrS-ow-UDF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="175" id="nNV-bp-DVu"/>
+                            <constraint firstItem="BrS-ow-UDF" firstAttribute="top" secondItem="6RP-MO-OeH" secondAttribute="bottom" constant="50" id="qIB-m8-Gbk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -25,8 +46,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

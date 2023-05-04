@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		885F57062A040F38005727BB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F57052A040F38005727BB /* TabBarController.swift */; };
 		887529FB2A03EA1C00C04560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887529FA2A03EA1C00C04560 /* AppDelegate.swift */; };
 		887529FD2A03EA1C00C04560 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887529FC2A03EA1C00C04560 /* SceneDelegate.swift */; };
 		887529FF2A03EA1C00C04560 /* Tela01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887529FE2A03EA1C00C04560 /* Tela01ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		885F57052A040F38005727BB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		887529F72A03EA1C00C04560 /* AtividadeTextFieldETabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtividadeTextFieldETabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		887529FA2A03EA1C00C04560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		887529FC2A03EA1C00C04560 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				88752A002A03EA1C00C04560 /* Main.storyboard */,
+				885F57052A040F38005727BB /* TabBarController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				88752A152A040A7700C04560 /* Tela02ViewController.swift in Sources */,
 				887529FF2A03EA1C00C04560 /* Tela01ViewController.swift in Sources */,
 				887529FB2A03EA1C00C04560 /* AppDelegate.swift in Sources */,
+				885F57062A040F38005727BB /* TabBarController.swift in Sources */,
 				887529FD2A03EA1C00C04560 /* SceneDelegate.swift in Sources */,
 				88752A192A040A9C00C04560 /* Tela03ViewController.swift in Sources */,
 			);
