@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		887529FB2A03EA1C00C04560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887529FA2A03EA1C00C04560 /* AppDelegate.swift */; };
+		887529FD2A03EA1C00C04560 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887529FC2A03EA1C00C04560 /* SceneDelegate.swift */; };
+		887529FF2A03EA1C00C04560 /* Tela01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887529FE2A03EA1C00C04560 /* Tela01ViewController.swift */; };
+		88752A022A03EA1C00C04560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88752A002A03EA1C00C04560 /* Main.storyboard */; };
+		88752A042A03EA1D00C04560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88752A032A03EA1D00C04560 /* Assets.xcassets */; };
+		88752A072A03EA1D00C04560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88752A052A03EA1D00C04560 /* LaunchScreen.storyboard */; };
+		88752A132A040A3700C04560 /* Tela01ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88752A122A040A3700C04560 /* Tela01ViewController.storyboard */; };
+		88752A152A040A7700C04560 /* Tela02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88752A142A040A7700C04560 /* Tela02ViewController.swift */; };
+		88752A172A040A8700C04560 /* Tela02ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88752A162A040A8700C04560 /* Tela02ViewController.storyboard */; };
+		88752A192A040A9C00C04560 /* Tela03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88752A182A040A9C00C04560 /* Tela03ViewController.swift */; };
+		88752A1B2A040AAE00C04560 /* Tela03ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88752A1A2A040AAE00C04560 /* Tela03ViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		887529F72A03EA1C00C04560 /* AtividadeTextFieldETabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtividadeTextFieldETabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		887529FA2A03EA1C00C04560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		887529FC2A03EA1C00C04560 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		887529FE2A03EA1C00C04560 /* Tela01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela01ViewController.swift; sourceTree = "<group>"; };
+		88752A012A03EA1C00C04560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88752A032A03EA1D00C04560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88752A062A03EA1D00C04560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88752A082A03EA1D00C04560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88752A122A040A3700C04560 /* Tela01ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela01ViewController.storyboard; sourceTree = "<group>"; };
+		88752A142A040A7700C04560 /* Tela02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02ViewController.swift; sourceTree = "<group>"; };
+		88752A162A040A8700C04560 /* Tela02ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela02ViewController.storyboard; sourceTree = "<group>"; };
+		88752A182A040A9C00C04560 /* Tela03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03ViewController.swift; sourceTree = "<group>"; };
+		88752A1A2A040AAE00C04560 /* Tela03ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela03ViewController.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		887529F42A03EA1C00C04560 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		887529EE2A03EA1C00C04560 = {
+			isa = PBXGroup;
+			children = (
+				887529F92A03EA1C00C04560 /* AtividadeTextFieldETabBar */,
+				887529F82A03EA1C00C04560 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		887529F82A03EA1C00C04560 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				887529F72A03EA1C00C04560 /* AtividadeTextFieldETabBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		887529F92A03EA1C00C04560 /* AtividadeTextFieldETabBar */ = {
+			isa = PBXGroup;
+			children = (
+				88752A112A040A1A00C04560 /* Tela03 */,
+				88752A102A040A1200C04560 /* Tela02 */,
+				88752A0F2A040A0A00C04560 /* Tela01 */,
+				88752A0E2A0408DD00C04560 /* TabBar */,
+				887529FA2A03EA1C00C04560 /* AppDelegate.swift */,
+				887529FC2A03EA1C00C04560 /* SceneDelegate.swift */,
+				88752A032A03EA1D00C04560 /* Assets.xcassets */,
+				88752A052A03EA1D00C04560 /* LaunchScreen.storyboard */,
+				88752A082A03EA1D00C04560 /* Info.plist */,
+			);
+			path = AtividadeTextFieldETabBar;
+			sourceTree = "<group>";
+		};
+		88752A0E2A0408DD00C04560 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				88752A002A03EA1C00C04560 /* Main.storyboard */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		88752A0F2A040A0A00C04560 /* Tela01 */ = {
+			isa = PBXGroup;
+			children = (
+				887529FE2A03EA1C00C04560 /* Tela01ViewController.swift */,
+				88752A122A040A3700C04560 /* Tela01ViewController.storyboard */,
+			);
+			path = Tela01;
+			sourceTree = "<group>";
+		};
+		88752A102A040A1200C04560 /* Tela02 */ = {
+			isa = PBXGroup;
+			children = (
+				88752A142A040A7700C04560 /* Tela02ViewController.swift */,
+				88752A162A040A8700C04560 /* Tela02ViewController.storyboard */,
+			);
+			path = Tela02;
+			sourceTree = "<group>";
+		};
+		88752A112A040A1A00C04560 /* Tela03 */ = {
+			isa = PBXGroup;
+			children = (
+				88752A182A040A9C00C04560 /* Tela03ViewController.swift */,
+				88752A1A2A040AAE00C04560 /* Tela03ViewController.storyboard */,
+			);
+			path = Tela03;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		887529F62A03EA1C00C04560 /* AtividadeTextFieldETabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88752A0B2A03EA1D00C04560 /* Build configuration list for PBXNativeTarget "AtividadeTextFieldETabBar" */;
+			buildPhases = (
+				887529F32A03EA1C00C04560 /* Sources */,
+				887529F42A03EA1C00C04560 /* Frameworks */,
+				887529F52A03EA1C00C04560 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtividadeTextFieldETabBar;
+			productName = AtividadeTextFieldETabBar;
+			productReference = 887529F72A03EA1C00C04560 /* AtividadeTextFieldETabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		887529EF2A03EA1C00C04560 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					887529F62A03EA1C00C04560 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 887529F22A03EA1C00C04560 /* Build configuration list for PBXProject "AtividadeTextFieldETabBar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 887529EE2A03EA1C00C04560;
+			productRefGroup = 887529F82A03EA1C00C04560 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				887529F62A03EA1C00C04560 /* AtividadeTextFieldETabBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		887529F52A03EA1C00C04560 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88752A172A040A8700C04560 /* Tela02ViewController.storyboard in Resources */,
+				88752A132A040A3700C04560 /* Tela01ViewController.storyboard in Resources */,
+				88752A072A03EA1D00C04560 /* LaunchScreen.storyboard in Resources */,
+				88752A042A03EA1D00C04560 /* Assets.xcassets in Resources */,
+				88752A1B2A040AAE00C04560 /* Tela03ViewController.storyboard in Resources */,
+				88752A022A03EA1C00C04560 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		887529F32A03EA1C00C04560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88752A152A040A7700C04560 /* Tela02ViewController.swift in Sources */,
+				887529FF2A03EA1C00C04560 /* Tela01ViewController.swift in Sources */,
+				887529FB2A03EA1C00C04560 /* AppDelegate.swift in Sources */,
+				887529FD2A03EA1C00C04560 /* SceneDelegate.swift in Sources */,
+				88752A192A040A9C00C04560 /* Tela03ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88752A002A03EA1C00C04560 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88752A012A03EA1C00C04560 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88752A052A03EA1D00C04560 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88752A062A03EA1D00C04560 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88752A092A03EA1D00C04560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88752A0A2A03EA1D00C04560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88752A0C2A03EA1D00C04560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AtividadeTextFieldETabBar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.AtividadeTextFieldETabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88752A0D2A03EA1D00C04560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AtividadeTextFieldETabBar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.AtividadeTextFieldETabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		887529F22A03EA1C00C04560 /* Build configuration list for PBXProject "AtividadeTextFieldETabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88752A092A03EA1D00C04560 /* Debug */,
+				88752A0A2A03EA1D00C04560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88752A0B2A03EA1D00C04560 /* Build configuration list for PBXNativeTarget "AtividadeTextFieldETabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88752A0C2A03EA1D00C04560 /* Debug */,
+				88752A0D2A03EA1D00C04560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 887529EF2A03EA1C00C04560 /* Project object */;
+}
