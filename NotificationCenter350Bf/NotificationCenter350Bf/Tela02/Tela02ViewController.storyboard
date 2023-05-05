@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tela02 View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Tela02ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="Tela02ViewController" customModule="NotificationCenter350Bf" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmu-ys-jyo">
+                                <rect key="frame" x="72" y="190" width="248" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="WsZ-pH-nSD"/>
+                                    <constraint firstAttribute="width" constant="248" id="bRb-ND-FEI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="Image"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedMacbookButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MJB-DC-0GY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdQ-4N-daw">
+                                <rect key="frame" x="72" y="465" width="248" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="Zxq-Dd-Zna"/>
+                                    <constraint firstAttribute="height" constant="166" id="bPu-Ew-NDh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="Image 3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedComputadorButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ZGD-Zf-Izt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opções" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9n-JV-VLS">
+                                <rect key="frame" x="126" y="71" width="141" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PdQ-4N-daw" secondAttribute="bottom" constant="187" id="1Pw-eW-GrN"/>
+                            <constraint firstItem="J9n-JV-VLS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="126" id="6aI-LP-ksC"/>
+                            <constraint firstItem="J9n-JV-VLS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="DCy-wA-OPf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="J9n-JV-VLS" secondAttribute="trailing" constant="126" id="Ffu-Xm-xVb"/>
+                            <constraint firstItem="xmu-ys-jyo" firstAttribute="top" secondItem="J9n-JV-VLS" secondAttribute="bottom" constant="68" id="LgU-qY-cby"/>
+                            <constraint firstItem="J9n-JV-VLS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="12" id="MTa-AF-Fzn"/>
+                            <constraint firstItem="xmu-ys-jyo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="72" id="ON8-J9-18m"/>
+                            <constraint firstItem="PdQ-4N-daw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="72" id="ale-fR-gH2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PdQ-4N-daw" secondAttribute="trailing" constant="73" id="fry-Kl-h29"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xmu-ys-jyo" secondAttribute="trailing" constant="73" id="tyj-z3-Yt0"/>
+                            <constraint firstItem="PdQ-4N-daw" firstAttribute="top" secondItem="xmu-ys-jyo" secondAttribute="bottom" constant="109" id="zX3-sv-jZc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="computadorButton" destination="PdQ-4N-daw" id="M2g-m5-r11"/>
+                        <outlet property="macbookButton" destination="xmu-ys-jyo" id="ulB-69-L5L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="1499" height="802"/>
+        <image name="Image 3" width="512" height="512"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
