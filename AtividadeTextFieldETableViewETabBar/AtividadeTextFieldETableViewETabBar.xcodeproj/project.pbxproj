@@ -16,6 +16,8 @@
 		885F57282A041594005727BB /* Tela01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F57272A041594005727BB /* Tela01ViewController.swift */; };
 		885F572A2A0415A3005727BB /* Tela02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F57292A0415A3005727BB /* Tela02ViewController.swift */; };
 		885F572C2A0415B1005727BB /* Tela03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F572B2A0415B1005727BB /* Tela03ViewController.swift */; };
+		885F57552A05F68B005727BB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F57532A05F68B005727BB /* CustomTableViewCell.swift */; };
+		885F57562A05F68B005727BB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885F57542A05F68B005727BB /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		885F57272A041594005727BB /* Tela01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela01ViewController.swift; sourceTree = "<group>"; };
 		885F57292A0415A3005727BB /* Tela02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02ViewController.swift; sourceTree = "<group>"; };
 		885F572B2A0415B1005727BB /* Tela03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03ViewController.swift; sourceTree = "<group>"; };
+		885F57532A05F68B005727BB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		885F57542A05F68B005727BB /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		885F57122A041411005727BB /* AtividadeTextFieldETableViewETabBar */ = {
 			isa = PBXGroup;
 			children = (
+				885F57522A05F670005727BB /* Cell */,
 				885F57132A041411005727BB /* AppDelegate.swift */,
 				885F57152A041411005727BB /* SceneDelegate.swift */,
 				885F57172A041411005727BB /* ViewController.swift */,
@@ -74,6 +79,15 @@
 				885F572B2A0415B1005727BB /* Tela03ViewController.swift */,
 			);
 			path = AtividadeTextFieldETableViewETabBar;
+			sourceTree = "<group>";
+		};
+		885F57522A05F670005727BB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				885F57532A05F68B005727BB /* CustomTableViewCell.swift */,
+				885F57542A05F68B005727BB /* CustomTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +150,7 @@
 			files = (
 				885F57202A041412005727BB /* LaunchScreen.storyboard in Resources */,
 				885F571D2A041412005727BB /* Assets.xcassets in Resources */,
+				885F57562A05F68B005727BB /* CustomTableViewCell.xib in Resources */,
 				885F571B2A041411005727BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +165,7 @@
 				885F57182A041411005727BB /* ViewController.swift in Sources */,
 				885F57142A041411005727BB /* AppDelegate.swift in Sources */,
 				885F57162A041411005727BB /* SceneDelegate.swift in Sources */,
+				885F57552A05F68B005727BB /* CustomTableViewCell.swift in Sources */,
 				885F572C2A0415B1005727BB /* Tela03ViewController.swift in Sources */,
 				885F57282A041594005727BB /* Tela01ViewController.swift in Sources */,
 				885F572A2A0415A3005727BB /* Tela02ViewController.swift in Sources */,

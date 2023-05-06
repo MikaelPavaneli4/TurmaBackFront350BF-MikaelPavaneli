@@ -26,11 +26,11 @@ configElementos()
         nameLabel.textColor = UIColor.gray
         nameTextField.delegate = self
         nameTextField.placeholder = "Coloque o nome de usuario"
-        nameTextField.layer.masksToBounds = true
-        nameTextField.layer.cornerRadius = 2
+        nameTextField.layer.cornerRadius = 10
         nameTextField.layer.borderWidth = 2
-        adicionarButton.
-        adicionarButton.layer.cornerRadius = 3
+        adicionarButton.layer.cornerRadius = 10
+        adicionarButton.clipsToBounds = true
+        adicionarButton.setTitle("Adicionar", for: .normal)
         adicionarButton.layer.borderColor = UIColor.blue.cgColor
         adicionarButton.layer.borderWidth = 3
     }
