@@ -14,7 +14,7 @@ class CustomTableViewCell: UITableViewCell {
    
     static let identifier: String = String(describing: CustomTableViewCell.self)
     static func nib() -> UINib{
-        return UINib(nibName: "CustomTableViewCell", bundle: nil)
+        return UINib(nibName: identifier, bundle: nil)
     }
     
     override func awakeFromNib() {
@@ -26,7 +26,7 @@ class CustomTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 }
     
-    func setupCell(){
+    func setupCell(user: User){
         
     }
     

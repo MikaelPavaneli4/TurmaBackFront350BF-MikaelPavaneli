@@ -9,6 +9,8 @@ import UIKit
 
 class Tela02ViewController: UIViewController {
 
+    var listUser: [User] = []
+    
     @IBOutlet weak var usuariosTableView: UITableView!
     @IBOutlet weak var adicionarButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
@@ -20,7 +22,11 @@ configElementos()
         configTableView(TableView: usuariosTableView)
         
     }
+    @IBAction func tappedAdicionarButton(_ sender: UIButton) {
+    }
     
+    @IBAction func nameTextField(_ sender: UITextField) {
+    }
     func configElementos(){
         nameLabel.text = "Nome:"
         nameLabel.textColor = UIColor.gray
@@ -38,7 +44,8 @@ configElementos()
     func configTableView(TableView: UITableView){
         TableView.dataSource = self
         TableView.delegate = self
-        
+        TableView.register(CustomTableViewCell.nib(), forCellReuseIdentifier: CustomTableViewCell.identifier)
+
     }
 
 }
@@ -46,16 +53,18 @@ configElementos()
 extension Tela02ViewController: UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return listUser.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as? CustomTableViewCell
+        cell?.setupCell(user: listUser[indexPath.row])
         return UITableViewCell()
     }
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        <#code#>
-//    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 164
+    }
     
 }
 
