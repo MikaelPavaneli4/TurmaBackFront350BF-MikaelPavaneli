@@ -15,7 +15,7 @@ class Tela02ViewController: UIViewController {
     @IBOutlet weak var adicionarButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var fotoUsuarioImage: UIView!
+    @IBOutlet weak var fotoUsuarioImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 configElementos()
@@ -23,6 +23,10 @@ configElementos()
         
     }
     @IBAction func tappedAdicionarButton(_ sender: UIButton) {
+        if let name = nameTextField.text, !name.isEmpty{
+            listUser.append(User(nameUser: nameTextField.text ?? "", imageUser: fotoUsuarioImage.image ?? UIImage()))
+            usuariosTableView.reloadData()
+        }
     }
     
     @IBAction func nameTextField(_ sender: UITextField) {

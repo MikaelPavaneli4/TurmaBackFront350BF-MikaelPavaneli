@@ -27,6 +27,8 @@ class CustomTableViewCell: UITableViewCell {
 }
     
     func setupCell(user: User){
+        usuarioLabel.text = user.nameUser
+        usuarioImage.image = user.imageUser
         
     }
     
