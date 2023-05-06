@@ -18,6 +18,7 @@
 		885F572C2A0415B1005727BB /* Tela03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F572B2A0415B1005727BB /* Tela03ViewController.swift */; };
 		885F57552A05F68B005727BB /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F57532A05F68B005727BB /* CustomTableViewCell.swift */; };
 		885F57562A05F68B005727BB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 885F57542A05F68B005727BB /* CustomTableViewCell.xib */; };
+		885F57592A05FA37005727BB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F57582A05FA37005727BB /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		885F572B2A0415B1005727BB /* Tela03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela03ViewController.swift; sourceTree = "<group>"; };
 		885F57532A05F68B005727BB /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		885F57542A05F68B005727BB /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		885F57582A05FA37005727BB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		885F57122A041411005727BB /* AtividadeTextFieldETableViewETabBar */ = {
 			isa = PBXGroup;
 			children = (
+				885F57572A05FA24005727BB /* Model */,
 				885F57522A05F670005727BB /* Cell */,
 				885F57132A041411005727BB /* AppDelegate.swift */,
 				885F57152A041411005727BB /* SceneDelegate.swift */,
@@ -88,6 +91,14 @@
 				885F57542A05F68B005727BB /* CustomTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		885F57572A05FA24005727BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				885F57582A05FA37005727BB /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				885F57142A041411005727BB /* AppDelegate.swift in Sources */,
 				885F57162A041411005727BB /* SceneDelegate.swift in Sources */,
 				885F57552A05F68B005727BB /* CustomTableViewCell.swift in Sources */,
+				885F57592A05FA37005727BB /* User.swift in Sources */,
 				885F572C2A0415B1005727BB /* Tela03ViewController.swift in Sources */,
 				885F57282A041594005727BB /* Tela01ViewController.swift in Sources */,
 				885F572A2A0415A3005727BB /* Tela02ViewController.swift in Sources */,

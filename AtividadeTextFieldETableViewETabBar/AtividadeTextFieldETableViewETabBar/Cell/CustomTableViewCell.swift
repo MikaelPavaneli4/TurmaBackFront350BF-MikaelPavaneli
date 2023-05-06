@@ -12,17 +12,22 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var usuarioImage: UIImageView!
     @IBOutlet weak var usuarioLabel: UILabel!
    
-    static let identifier: CustomTableViewCell.self
+    static let identifier: String = String(describing: CustomTableViewCell.self)
+    static func nib() -> UINib{
+        return UINib(nibName: "CustomTableViewCell", bundle: nil)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+}
+    
+    func setupCell(){
+        
     }
     
 }

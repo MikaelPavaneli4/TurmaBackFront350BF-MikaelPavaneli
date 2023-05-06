@@ -38,6 +38,7 @@ configElementos()
     func configTableView(TableView: UITableView){
         TableView.dataSource = self
         TableView.delegate = self
+        
     }
 
 }
