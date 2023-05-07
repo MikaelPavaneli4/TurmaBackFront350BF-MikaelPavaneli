@@ -54,7 +54,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="tappedAlterarFotosButton:" destination="sE0-s9-FsM" eventType="touchUpInside" id="07r-gJ-SIi"/>
+                                    <action selector="tappedAlterarFotoButton:" destination="sE0-s9-FsM" eventType="touchUpInside" id="gAe-Mc-kCn"/>
                                 </connections>
                             </button>
                         </subviews>

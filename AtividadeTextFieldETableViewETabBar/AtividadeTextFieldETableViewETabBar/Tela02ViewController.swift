@@ -7,9 +7,9 @@
 
 import UIKit
 
-class Tela02ViewController: UIViewController, UINavigationControllerDelegate {
+class Tela02ViewController: UIViewController {
 
-    let imagePicker: UIImagePickerController = UIImagePickerController()
+    var imagePicker: UIImagePickerController = UIImagePickerController()
     var listUser: [User] = []
     
     @IBOutlet weak var alterarFotoButton: UIButton!
@@ -18,20 +18,28 @@ class Tela02ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var fotoUsuarioImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-configElementos()
+       configElementos()
         configTableView(TableView: usuariosTableView)
-        
+        configImagePicker()
     }
-    @IBAction func tappedAlterarFotosButton(_ sender: UIButton) {
+    
+    func configImagePicker(){
+        imagePicker.delegate = self
+    }
+    
+    @IBAction func tappedAlterarFotoButton(_ sender: UIButton) {
         imagePicker.sourceType = .photoLibrary
-                present(imagePicker, animated: true)
+        present(imagePicker, animated: true)
     }
+    
     
     @IBAction func tappedAdicionarButton(_ sender: UIButton) {
         if let name = nameTextField.text, !name.isEmpty{
             listUser.append(User(nameUser: nameTextField.text ?? "", imageUser: fotoUsuarioImage.image ?? UIImage()))
+            fotoUsuarioImage.tintColor = .black
             usuariosTableView.reloadData()
         }
     }
@@ -39,9 +47,8 @@ configElementos()
     @IBAction func nameTextField(_ sender: UITextField) {
     }
    
-    func configImagePicker(){
-        imagePicker.delegate = self
-    }
+   
+    
     
     func configElementos(){
         nameLabel.text = "Nome:"
@@ -61,6 +68,12 @@ configElementos()
         alterarFotoButton.layer.cornerRadius = 10
         alterarFotoButton.layer.borderWidth = 5
         alterarFotoButton.layer.borderColor = UIColor.black.cgColor
+        fotoUsuarioImage.image = UIImage(systemName: "person")
+        fotoUsuarioImage.tintColor = .black
+        fotoUsuarioImage.clipsToBounds = true
+        fotoUsuarioImage.layer.cornerRadius = 10
+        fotoUsuarioImage.layer.masksToBounds = true
+    
     }
     
     func configTableView(TableView: UITableView){
@@ -72,8 +85,8 @@ configElementos()
 
 }
 
-extension Tela02ViewController: UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate {
-   
+extension Tela02ViewController: UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listUser.count
     }
@@ -89,12 +102,15 @@ extension Tela02ViewController: UITextFieldDelegate, UITableViewDelegate, UITabl
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
-            fotoUsuarioImage.image = image
-        }else{
+        if let image = info[UIImagePickerController.InfoKey.originalImage]{
+            fotoUsuarioImage.image = image as? UIImage
+        }
             picker.dismiss(animated: true)
         }
     }
     
-}
+
+   
+    
+
 
