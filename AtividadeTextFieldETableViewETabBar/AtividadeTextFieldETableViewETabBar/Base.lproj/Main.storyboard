@@ -115,7 +115,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="qYz-E9-CFl">
             <objects>
-                <tabBarController id="ZZt-Q7-7jF" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZZt-Q7-7jF" customClass="TabBarController" customModule="AtividadeTextFieldETableViewETabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iHc-oX-rbO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

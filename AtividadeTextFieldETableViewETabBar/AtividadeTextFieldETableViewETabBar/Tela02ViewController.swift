@@ -7,8 +7,9 @@
 
 import UIKit
 
-class Tela02ViewController: UIViewController {
+class Tela02ViewController: UIViewController, UINavigationControllerDelegate {
 
+    let imagePicker: UIImagePickerController = UIImagePickerController()
     var listUser: [User] = []
     
     @IBOutlet weak var alterarFotoButton: UIButton!
@@ -37,6 +38,11 @@ configElementos()
     
     @IBAction func nameTextField(_ sender: UITextField) {
     }
+   
+    func configImagePicker(){
+        imagePicker.delegate = self
+    }
+    
     func configElementos(){
         nameLabel.text = "Nome:"
         nameLabel.textColor = UIColor.gray
@@ -66,7 +72,7 @@ configElementos()
 
 }
 
-extension Tela02ViewController: UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
+extension Tela02ViewController: UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate {
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listUser.count
