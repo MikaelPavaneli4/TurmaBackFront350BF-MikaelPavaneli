@@ -41,7 +41,22 @@ class Tela02ViewController: UIViewController {
             listUser.append(User(nameUser: nameTextField.text ?? "", imageUser: fotoUsuarioImage.image ?? UIImage()))
             fotoUsuarioImage.tintColor = .black
             usuariosTableView.reloadData()
-        }
+            nameTextField.text = ""
+            fotoUsuarioImage.image = UIImage(systemName: "person")
+            }else{
+                let alertController = UIAlertController(title: "Opa !!!", message: "Preencha o campo corretamente", preferredStyle: .alert)
+                
+                let okButton = UIAlertAction(title: "OK", style: .default){
+                    ACTION in print("Deu certo")
+                }
+                let okButton2 = UIAlertAction(title: "OK2", style: .default){
+                    ACTION in print("Deu certo2")
+                }
+                alertController.addAction(okButton)
+                alertController.addAction(okButton2)
+                present(alertController,animated: true)
+            }
+        
     }
     
     @IBAction func nameTextField(_ sender: UITextField) {
