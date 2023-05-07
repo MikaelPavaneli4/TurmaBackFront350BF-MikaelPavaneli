@@ -11,6 +11,7 @@ class Tela02ViewController: UIViewController {
 
     var listUser: [User] = []
     
+    @IBOutlet weak var alterarFotoButton: UIButton!
     @IBOutlet weak var usuariosTableView: UITableView!
     @IBOutlet weak var adicionarButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
@@ -22,6 +23,11 @@ configElementos()
         configTableView(TableView: usuariosTableView)
         
     }
+    @IBAction func tappedAlterarFotosButton(_ sender: UIButton) {
+        imagePicker.sourceType = .photoLibrary
+                present(imagePicker, animated: true)
+    }
+    
     @IBAction func tappedAdicionarButton(_ sender: UIButton) {
         if let name = nameTextField.text, !name.isEmpty{
             listUser.append(User(nameUser: nameTextField.text ?? "", imageUser: fotoUsuarioImage.image ?? UIImage()))
@@ -38,11 +44,17 @@ configElementos()
         nameTextField.placeholder = "Coloque o nome de usuario"
         nameTextField.layer.cornerRadius = 10
         nameTextField.layer.borderWidth = 2
+        nameTextField.layer.masksToBounds = true
         adicionarButton.layer.cornerRadius = 10
         adicionarButton.clipsToBounds = true
         adicionarButton.setTitle("Adicionar", for: .normal)
         adicionarButton.layer.borderColor = UIColor.blue.cgColor
         adicionarButton.layer.borderWidth = 3
+        alterarFotoButton.setTitle("Alterar Foto", for: .normal)
+        alterarFotoButton.clipsToBounds = true
+        alterarFotoButton.layer.cornerRadius = 10
+        alterarFotoButton.layer.borderWidth = 5
+        alterarFotoButton.layer.borderColor = UIColor.black.cgColor
     }
     
     func configTableView(TableView: UITableView){
