@@ -22,6 +22,7 @@
 		88FD0A7C2A09E300004C6E1E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A7B2A09E300004C6E1E /* Person.swift */; };
 		88FD0A802A09E366004C6E1E /* ListaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A7E2A09E366004C6E1E /* ListaTableViewCell.swift */; };
 		88FD0A812A09E366004C6E1E /* ListaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88FD0A7F2A09E366004C6E1E /* ListaTableViewCell.xib */; };
+		88FD0A842A0A9BA7004C6E1E /* NSNotification.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A832A0A9BA7004C6E1E /* NSNotification.Name.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		88FD0A7B2A09E300004C6E1E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		88FD0A7E2A09E366004C6E1E /* ListaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTableViewCell.swift; sourceTree = "<group>"; };
 		88FD0A7F2A09E366004C6E1E /* ListaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTableViewCell.xib; sourceTree = "<group>"; };
+		88FD0A832A0A9BA7004C6E1E /* NSNotification.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotification.Name.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		88FD0A562A09D16C004C6E1E /* AtividadeNotificationCenterETabBar */ = {
 			isa = PBXGroup;
 			children = (
+				88FD0A822A0A9B75004C6E1E /* Notification Center */,
 				88FD0A7A2A09E2E1004C6E1E /* Model */,
 				88FD0A7D2A09E33B004C6E1E /* Cell */,
 				88FD0A712A09D28D004C6E1E /* TelaCadastro */,
@@ -132,6 +135,14 @@
 				88FD0A7F2A09E366004C6E1E /* ListaTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		88FD0A822A0A9B75004C6E1E /* Notification Center */ = {
+			isa = PBXGroup;
+			children = (
+				88FD0A832A0A9BA7004C6E1E /* NSNotification.Name.swift */,
+			);
+			path = "Notification Center";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 				88FD0A5C2A09D16C004C6E1E /* ViewController.swift in Sources */,
 				88FD0A772A09D2E6004C6E1E /* TelaCadastroViewController.swift in Sources */,
 				88FD0A802A09E366004C6E1E /* ListaTableViewCell.swift in Sources */,
+				88FD0A842A0A9BA7004C6E1E /* NSNotification.Name.swift in Sources */,
 				88FD0A6D2A09D1C2004C6E1E /* TabBarController.swift in Sources */,
 				88FD0A7C2A09E300004C6E1E /* Person.swift in Sources */,
 				88FD0A582A09D16C004C6E1E /* AppDelegate.swift in Sources */,

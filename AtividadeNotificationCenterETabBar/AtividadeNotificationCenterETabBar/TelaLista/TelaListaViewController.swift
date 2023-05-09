@@ -18,7 +18,9 @@ configTableView()
         view.backgroundColor = .brown
     }
     
-    
+    func configObserver(){
+        NotificationCenter.default.addObserver(self, selector: #selector(), name: .nomeCadastro, object: nil)
+    }
 
     private func configTableView(){
         listaTableView.delegate = self
