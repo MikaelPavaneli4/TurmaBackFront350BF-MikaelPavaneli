@@ -19,6 +19,9 @@
 		88FD0A752A09D2CE004C6E1E /* TelaListaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FD0A742A09D2CE004C6E1E /* TelaListaViewController.storyboard */; };
 		88FD0A772A09D2E6004C6E1E /* TelaCadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A762A09D2E5004C6E1E /* TelaCadastroViewController.swift */; };
 		88FD0A792A09D2F8004C6E1E /* TelaCadastroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FD0A782A09D2F8004C6E1E /* TelaCadastroViewController.storyboard */; };
+		88FD0A7C2A09E300004C6E1E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A7B2A09E300004C6E1E /* Person.swift */; };
+		88FD0A802A09E366004C6E1E /* ListaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A7E2A09E366004C6E1E /* ListaTableViewCell.swift */; };
+		88FD0A812A09E366004C6E1E /* ListaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88FD0A7F2A09E366004C6E1E /* ListaTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		88FD0A742A09D2CE004C6E1E /* TelaListaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TelaListaViewController.storyboard; sourceTree = "<group>"; };
 		88FD0A762A09D2E5004C6E1E /* TelaCadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCadastroViewController.swift; sourceTree = "<group>"; };
 		88FD0A782A09D2F8004C6E1E /* TelaCadastroViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TelaCadastroViewController.storyboard; sourceTree = "<group>"; };
+		88FD0A7B2A09E300004C6E1E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		88FD0A7E2A09E366004C6E1E /* ListaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTableViewCell.swift; sourceTree = "<group>"; };
+		88FD0A7F2A09E366004C6E1E /* ListaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,8 @@
 		88FD0A562A09D16C004C6E1E /* AtividadeNotificationCenterETabBar */ = {
 			isa = PBXGroup;
 			children = (
+				88FD0A7A2A09E2E1004C6E1E /* Model */,
+				88FD0A7D2A09E33B004C6E1E /* Cell */,
 				88FD0A712A09D28D004C6E1E /* TelaCadastro */,
 				88FD0A702A09D270004C6E1E /* TelaLista */,
 				88FD0A6B2A09D196004C6E1E /* TabBarController */,
@@ -107,6 +115,23 @@
 				88FD0A782A09D2F8004C6E1E /* TelaCadastroViewController.storyboard */,
 			);
 			path = TelaCadastro;
+			sourceTree = "<group>";
+		};
+		88FD0A7A2A09E2E1004C6E1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88FD0A7B2A09E300004C6E1E /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88FD0A7D2A09E33B004C6E1E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				88FD0A7E2A09E366004C6E1E /* ListaTableViewCell.swift */,
+				88FD0A7F2A09E366004C6E1E /* ListaTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88FD0A642A09D16E004C6E1E /* LaunchScreen.storyboard in Resources */,
+				88FD0A812A09E366004C6E1E /* ListaTableViewCell.xib in Resources */,
 				88FD0A612A09D16E004C6E1E /* Assets.xcassets in Resources */,
 				88FD0A6F2A09D1D4004C6E1E /* TabBarController.storyboard in Resources */,
 				88FD0A752A09D2CE004C6E1E /* TelaListaViewController.storyboard in Resources */,
@@ -186,7 +212,9 @@
 				88FD0A732A09D2BE004C6E1E /* TelaListaViewController.swift in Sources */,
 				88FD0A5C2A09D16C004C6E1E /* ViewController.swift in Sources */,
 				88FD0A772A09D2E6004C6E1E /* TelaCadastroViewController.swift in Sources */,
+				88FD0A802A09E366004C6E1E /* ListaTableViewCell.swift in Sources */,
 				88FD0A6D2A09D1C2004C6E1E /* TabBarController.swift in Sources */,
+				88FD0A7C2A09E300004C6E1E /* Person.swift in Sources */,
 				88FD0A582A09D16C004C6E1E /* AppDelegate.swift in Sources */,
 				88FD0A5A2A09D16C004C6E1E /* SceneDelegate.swift in Sources */,
 			);
