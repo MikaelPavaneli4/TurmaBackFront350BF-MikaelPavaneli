@@ -11,7 +11,7 @@ class ListaTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nomeLabel: UILabel!
     
-    static let identifier = ListaTableViewCell.self
+    static let identifier = "ListaTableViewCell"
     static func nib() -> UINib{
         return UINib(nibName: "ListaTableViewCell", bundle: nil)
     }
@@ -27,6 +27,6 @@ class ListaTableViewCell: UITableViewCell {
         
     }
     public func setupCell(person: Person){
-        
+        nomeLabel.text = person.name
     }
 }

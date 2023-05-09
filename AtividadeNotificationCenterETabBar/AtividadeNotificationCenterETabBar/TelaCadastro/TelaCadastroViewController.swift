@@ -7,6 +7,8 @@
 
 import UIKit
 
+//var getObject: TelaListaViewController = TelaListaViewController()
+
 class TelaCadastroViewController: UIViewController {
 
     @IBOutlet weak var addButton: UIButton!
@@ -19,6 +21,7 @@ class TelaCadastroViewController: UIViewController {
     }
     
     @IBAction func tappedAddButton(_ sender: UIButton) {
+        
     }
     
     private func configButton(){

@@ -9,6 +9,8 @@ import UIKit
 
 class TelaListaViewController: UIViewController {
 
+    var listPerson: [Person] = []
+    
     @IBOutlet weak var listaTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,7 @@ configTableView()
     private func configTableView(){
         listaTableView.delegate = self
         listaTableView.dataSource = self
-        listaTableView.register(, forCellReuseIdentifier: <#T##String#>)
+        listaTableView.register(ListaTableViewCell.nib(), forCellReuseIdentifier: ListaTableViewCell.identifier)
     }
 
 }
@@ -32,7 +34,9 @@ extension TelaListaViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = listaTableView.dequeueReusableCell(withIdentifier: , for: <#T##IndexPath#>)
+        let cell = listaTableView.dequeueReusableCell(withIdentifier: ListaTableViewCell.identifier, for: indexPath) as? ListaTableViewCell
+        cell?.setupCell(person: <#T##Person#>)
+        return cell ?? UITableViewCell()
     }
     
     
