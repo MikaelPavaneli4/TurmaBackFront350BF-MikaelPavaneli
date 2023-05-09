@@ -16,7 +16,7 @@ class TelaListaViewController: UIViewController {
         super.viewDidLoad()
 configTableView()
         configObserver()
-        view.backgroundColor = .brown
+        view.backgroundColor = .gray
         navigationController?.navigationBar.isHidden = true
     }
     
@@ -36,6 +36,11 @@ configTableView()
         listaTableView.delegate = self
         listaTableView.dataSource = self
         listaTableView.register(ListaTableViewCell.nib(), forCellReuseIdentifier: ListaTableViewCell.identifier)
+        listaTableView.layer.backgroundColor = UIColor.gray.cgColor
+        listaTableView.clipsToBounds = true
+        listaTableView.layer.cornerRadius = 10
+    
+        
     }
 
 }

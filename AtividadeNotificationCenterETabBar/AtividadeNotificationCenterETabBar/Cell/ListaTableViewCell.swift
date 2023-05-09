@@ -14,6 +14,7 @@ class ListaTableViewCell: UITableViewCell {
     static let identifier = "ListaTableViewCell"
     static func nib() -> UINib{
         return UINib(nibName: "ListaTableViewCell", bundle: nil)
+       
     }
     
     override func awakeFromNib() {

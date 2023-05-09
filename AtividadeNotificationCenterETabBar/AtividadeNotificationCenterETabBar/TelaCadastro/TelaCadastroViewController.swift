@@ -11,27 +11,32 @@ import UIKit
 
 class TelaCadastroViewController: UIViewController {
 
+
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var cadastroTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .orange
+        view.backgroundColor = .gray
         configButton()
         configTextField()
+        
     }
     
     @IBAction func tappedAddButton(_ sender: UIButton) {
 //        let vc: TelaListaViewController = TelaListaViewController()
 //        vc.listPerson.append(Person(name: cadastroTextField.text ?? ""))
         NotificationCenter.default.post(name: .nomeCadastro, object: cadastroTextField.text)
+       
     }
     
     private func configButton(){
         addButton.layer.borderWidth = 1
-        addButton.layer.borderColor = UIColor.gray.cgColor
+        addButton.layer.borderColor = UIColor.black.cgColor
         addButton.setTitle("Adicionar", for: .normal)
-        addButton.setTitleColor(.darkGray, for: .normal)
+        addButton.setTitleColor(.lightGray, for: .normal)
+        addButton.setTitleColor(.black, for: .normal)
     }
+    
     private func configTextField(){
         cadastroTextField.delegate = self
         cadastroTextField.placeholder = "Cadastre uma pessoa!!"
