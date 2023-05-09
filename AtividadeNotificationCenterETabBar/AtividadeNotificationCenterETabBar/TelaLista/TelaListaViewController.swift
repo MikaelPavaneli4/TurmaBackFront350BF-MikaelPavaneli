@@ -18,6 +18,7 @@ configTableView()
         view.backgroundColor = .brown
     }
     
+    
 
     private func configTableView(){
         listaTableView.delegate = self
@@ -30,12 +31,12 @@ extension TelaListaViewController: UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return listPerson.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = listaTableView.dequeueReusableCell(withIdentifier: ListaTableViewCell.identifier, for: indexPath) as? ListaTableViewCell
-        cell?.setupCell(person: <#T##Person#>)
+        cell?.setupCell(person: listPerson[indexPath.row])
         return cell ?? UITableViewCell()
     }
     
@@ -44,5 +45,6 @@ extension TelaListaViewController: UITableViewDelegate, UITableViewDataSource{
         return 57
     }
     
+   
     
 }

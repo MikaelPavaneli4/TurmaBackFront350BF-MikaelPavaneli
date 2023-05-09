@@ -21,6 +21,8 @@ class TelaCadastroViewController: UIViewController {
     }
     
     @IBAction func tappedAddButton(_ sender: UIButton) {
+        let vc: TelaListaViewController = TelaListaViewController()
+        vc.listPerson.append(Person(name: cadastroTextField.text ?? ""))
         
     }
     
