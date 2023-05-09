@@ -15,13 +15,23 @@ class TelaListaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 configTableView()
+        configObserver()
         view.backgroundColor = .brown
+        navigationController?.navigationBar.isHidden = true
     }
     
     func configObserver(){
-        NotificationCenter.default.addObserver(self, selector: #selector(), name: .nomeCadastro, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(updateName), name: .nomeCadastro, object: nil)
     }
 
+    @objc func updateName(_ notification: NSNotification){
+
+        let nome = notification.object as? String
+        listPerson.append(Person(name: nome ?? ""))
+        listaTableView.reloadData()
+    
+    }
+    
     private func configTableView(){
         listaTableView.delegate = self
         listaTableView.dataSource = self

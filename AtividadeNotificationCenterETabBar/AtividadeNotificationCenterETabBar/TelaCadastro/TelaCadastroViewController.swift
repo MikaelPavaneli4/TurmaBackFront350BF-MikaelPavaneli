@@ -21,9 +21,9 @@ class TelaCadastroViewController: UIViewController {
     }
     
     @IBAction func tappedAddButton(_ sender: UIButton) {
-        let vc: TelaListaViewController = TelaListaViewController()
-        vc.listPerson.append(Person(name: cadastroTextField.text ?? ""))
-        NotificationCenter.default.post(name: .nomeCadastro, object: nil)
+//        let vc: TelaListaViewController = TelaListaViewController()
+//        vc.listPerson.append(Person(name: cadastroTextField.text ?? ""))
+        NotificationCenter.default.post(name: .nomeCadastro, object: cadastroTextField.text)
     }
     
     private func configButton(){
@@ -45,5 +45,8 @@ class TelaCadastroViewController: UIViewController {
 }
 
 extension TelaCadastroViewController: UITextFieldDelegate {
+    
+
+    
     
 }
