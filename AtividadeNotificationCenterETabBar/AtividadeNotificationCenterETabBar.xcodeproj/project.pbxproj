@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88FD0A582A09D16C004C6E1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A572A09D16C004C6E1E /* AppDelegate.swift */; };
+		88FD0A5A2A09D16C004C6E1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A592A09D16C004C6E1E /* SceneDelegate.swift */; };
+		88FD0A5C2A09D16C004C6E1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A5B2A09D16C004C6E1E /* ViewController.swift */; };
+		88FD0A5F2A09D16C004C6E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FD0A5D2A09D16C004C6E1E /* Main.storyboard */; };
+		88FD0A612A09D16E004C6E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FD0A602A09D16E004C6E1E /* Assets.xcassets */; };
+		88FD0A642A09D16E004C6E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FD0A622A09D16E004C6E1E /* LaunchScreen.storyboard */; };
+		88FD0A6D2A09D1C2004C6E1E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A6C2A09D1C2004C6E1E /* TabBarController.swift */; };
+		88FD0A6F2A09D1D4004C6E1E /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FD0A6E2A09D1D4004C6E1E /* TabBarController.storyboard */; };
+		88FD0A732A09D2BE004C6E1E /* TelaListaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A722A09D2BE004C6E1E /* TelaListaViewController.swift */; };
+		88FD0A752A09D2CE004C6E1E /* TelaListaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FD0A742A09D2CE004C6E1E /* TelaListaViewController.storyboard */; };
+		88FD0A772A09D2E6004C6E1E /* TelaCadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD0A762A09D2E5004C6E1E /* TelaCadastroViewController.swift */; };
+		88FD0A792A09D2F8004C6E1E /* TelaCadastroViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88FD0A782A09D2F8004C6E1E /* TelaCadastroViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		88FD0A542A09D16C004C6E1E /* AtividadeNotificationCenterETabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtividadeNotificationCenterETabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88FD0A572A09D16C004C6E1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88FD0A592A09D16C004C6E1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		88FD0A5B2A09D16C004C6E1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88FD0A5E2A09D16C004C6E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88FD0A602A09D16E004C6E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88FD0A632A09D16E004C6E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88FD0A652A09D16E004C6E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88FD0A6C2A09D1C2004C6E1E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		88FD0A6E2A09D1D4004C6E1E /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		88FD0A722A09D2BE004C6E1E /* TelaListaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaListaViewController.swift; sourceTree = "<group>"; };
+		88FD0A742A09D2CE004C6E1E /* TelaListaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TelaListaViewController.storyboard; sourceTree = "<group>"; };
+		88FD0A762A09D2E5004C6E1E /* TelaCadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCadastroViewController.swift; sourceTree = "<group>"; };
+		88FD0A782A09D2F8004C6E1E /* TelaCadastroViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TelaCadastroViewController.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88FD0A512A09D16C004C6E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88FD0A4B2A09D16C004C6E1E = {
+			isa = PBXGroup;
+			children = (
+				88FD0A562A09D16C004C6E1E /* AtividadeNotificationCenterETabBar */,
+				88FD0A552A09D16C004C6E1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88FD0A552A09D16C004C6E1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88FD0A542A09D16C004C6E1E /* AtividadeNotificationCenterETabBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88FD0A562A09D16C004C6E1E /* AtividadeNotificationCenterETabBar */ = {
+			isa = PBXGroup;
+			children = (
+				88FD0A712A09D28D004C6E1E /* TelaCadastro */,
+				88FD0A702A09D270004C6E1E /* TelaLista */,
+				88FD0A6B2A09D196004C6E1E /* TabBarController */,
+				88FD0A572A09D16C004C6E1E /* AppDelegate.swift */,
+				88FD0A592A09D16C004C6E1E /* SceneDelegate.swift */,
+				88FD0A5B2A09D16C004C6E1E /* ViewController.swift */,
+				88FD0A5D2A09D16C004C6E1E /* Main.storyboard */,
+				88FD0A602A09D16E004C6E1E /* Assets.xcassets */,
+				88FD0A622A09D16E004C6E1E /* LaunchScreen.storyboard */,
+				88FD0A652A09D16E004C6E1E /* Info.plist */,
+			);
+			path = AtividadeNotificationCenterETabBar;
+			sourceTree = "<group>";
+		};
+		88FD0A6B2A09D196004C6E1E /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				88FD0A6C2A09D1C2004C6E1E /* TabBarController.swift */,
+				88FD0A6E2A09D1D4004C6E1E /* TabBarController.storyboard */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		88FD0A702A09D270004C6E1E /* TelaLista */ = {
+			isa = PBXGroup;
+			children = (
+				88FD0A722A09D2BE004C6E1E /* TelaListaViewController.swift */,
+				88FD0A742A09D2CE004C6E1E /* TelaListaViewController.storyboard */,
+			);
+			path = TelaLista;
+			sourceTree = "<group>";
+		};
+		88FD0A712A09D28D004C6E1E /* TelaCadastro */ = {
+			isa = PBXGroup;
+			children = (
+				88FD0A762A09D2E5004C6E1E /* TelaCadastroViewController.swift */,
+				88FD0A782A09D2F8004C6E1E /* TelaCadastroViewController.storyboard */,
+			);
+			path = TelaCadastro;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88FD0A532A09D16C004C6E1E /* AtividadeNotificationCenterETabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88FD0A682A09D16E004C6E1E /* Build configuration list for PBXNativeTarget "AtividadeNotificationCenterETabBar" */;
+			buildPhases = (
+				88FD0A502A09D16C004C6E1E /* Sources */,
+				88FD0A512A09D16C004C6E1E /* Frameworks */,
+				88FD0A522A09D16C004C6E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtividadeNotificationCenterETabBar;
+			productName = AtividadeNotificationCenterETabBar;
+			productReference = 88FD0A542A09D16C004C6E1E /* AtividadeNotificationCenterETabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88FD0A4C2A09D16C004C6E1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					88FD0A532A09D16C004C6E1E = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 88FD0A4F2A09D16C004C6E1E /* Build configuration list for PBXProject "AtividadeNotificationCenterETabBar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88FD0A4B2A09D16C004C6E1E;
+			productRefGroup = 88FD0A552A09D16C004C6E1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88FD0A532A09D16C004C6E1E /* AtividadeNotificationCenterETabBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88FD0A522A09D16C004C6E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FD0A642A09D16E004C6E1E /* LaunchScreen.storyboard in Resources */,
+				88FD0A612A09D16E004C6E1E /* Assets.xcassets in Resources */,
+				88FD0A6F2A09D1D4004C6E1E /* TabBarController.storyboard in Resources */,
+				88FD0A752A09D2CE004C6E1E /* TelaListaViewController.storyboard in Resources */,
+				88FD0A792A09D2F8004C6E1E /* TelaCadastroViewController.storyboard in Resources */,
+				88FD0A5F2A09D16C004C6E1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88FD0A502A09D16C004C6E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88FD0A732A09D2BE004C6E1E /* TelaListaViewController.swift in Sources */,
+				88FD0A5C2A09D16C004C6E1E /* ViewController.swift in Sources */,
+				88FD0A772A09D2E6004C6E1E /* TelaCadastroViewController.swift in Sources */,
+				88FD0A6D2A09D1C2004C6E1E /* TabBarController.swift in Sources */,
+				88FD0A582A09D16C004C6E1E /* AppDelegate.swift in Sources */,
+				88FD0A5A2A09D16C004C6E1E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88FD0A5D2A09D16C004C6E1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88FD0A5E2A09D16C004C6E1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88FD0A622A09D16E004C6E1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88FD0A632A09D16E004C6E1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88FD0A662A09D16E004C6E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88FD0A672A09D16E004C6E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88FD0A692A09D16E004C6E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AtividadeNotificationCenterETabBar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.AtividadeNotificationCenterETabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88FD0A6A2A09D16E004C6E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AtividadeNotificationCenterETabBar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.AtividadeNotificationCenterETabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88FD0A4F2A09D16C004C6E1E /* Build configuration list for PBXProject "AtividadeNotificationCenterETabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FD0A662A09D16E004C6E1E /* Debug */,
+				88FD0A672A09D16E004C6E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88FD0A682A09D16E004C6E1E /* Build configuration list for PBXNativeTarget "AtividadeNotificationCenterETabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FD0A692A09D16E004C6E1E /* Debug */,
+				88FD0A6A2A09D16E004C6E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88FD0A4C2A09D16C004C6E1E /* Project object */;
+}
