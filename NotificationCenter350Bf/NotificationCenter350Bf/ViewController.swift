@@ -9,10 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var cliqueAquiButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configObserver()
     }
 
     @IBAction func tappedCliqueAquiButton(_ sender: UIButton) {
@@ -22,5 +24,32 @@ class ViewController: UIViewController {
         
     }
     
+    func configObserver(){
+        NotificationCenter.default.addObserver(self, selector: #selector(tappedMacbookButton), name: .alteracoes, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(tappedImacButton), name: .mudancas, object: nil)
+       
+    }
+    
+    @objc func tappedMacbookButton(){
+        nomeLabel.text = "MacBook é muito foda"
+        view.backgroundColor = .blue
+        logoImage.image = UIImage(systemName: "person")
+        logoImage.layer.backgroundColor = UIColor.red.cgColor
+        logoImage.clipsToBounds = true
+        logoImage.layer.cornerRadius = 100
+        logoImage.layer.masksToBounds = true
+    }
+    
+    @objc func tappedImacButton(){
+        nomeLabel.text = "Imac é muito foda"
+        view.backgroundColor = .yellow
+        logoImage.image = UIImage(named: "ryu")
+        logoImage.layer.backgroundColor = UIColor.lightGray.cgColor
+        logoImage.clipsToBounds = true
+        logoImage.layer.cornerRadius = 50
+        logoImage.layer.masksToBounds = true
+    }
+   
 }
 

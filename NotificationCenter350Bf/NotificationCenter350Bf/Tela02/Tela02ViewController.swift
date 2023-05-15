@@ -20,10 +20,12 @@ class Tela02ViewController: UIViewController {
     
     @IBAction func tappedMacbookButton(_ sender: UIButton) {
         dismiss(animated: true)
+        NotificationCenter.default.post(name:.alteracoes, object: nil)
     }
     
     @IBAction func tappedComputadorButton(_ sender: UIButton) {
         dismiss(animated: true)
+        NotificationCenter.default.post(name: .mudancas, object: nil)
     }
     /*
     // MARK: - Navigation

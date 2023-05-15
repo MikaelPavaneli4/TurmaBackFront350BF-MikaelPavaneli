@@ -15,6 +15,7 @@
 		885F57462A046BE9005727BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885F57442A046BE9005727BB /* LaunchScreen.storyboard */; };
 		885F574F2A046E4D005727BB /* Tela02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885F574E2A046E4D005727BB /* Tela02ViewController.swift */; };
 		885F57512A046E6F005727BB /* Tela02ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885F57502A046E6F005727BB /* Tela02ViewController.storyboard */; };
+		889E45502A12906700192C67 /* NSNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889E454F2A12906700192C67 /* NSNotificationCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		885F57472A046BE9005727BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885F574E2A046E4D005727BB /* Tela02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02ViewController.swift; sourceTree = "<group>"; };
 		885F57502A046E6F005727BB /* Tela02ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela02ViewController.storyboard; sourceTree = "<group>"; };
+		889E454F2A12906700192C67 /* NSNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				885F57422A046BE9005727BB /* Assets.xcassets */,
 				885F57442A046BE9005727BB /* LaunchScreen.storyboard */,
 				885F57472A046BE9005727BB /* Info.plist */,
+				889E454F2A12906700192C67 /* NSNotificationCenter.swift */,
 			);
 			path = NotificationCenter350Bf;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				885F574F2A046E4D005727BB /* Tela02ViewController.swift in Sources */,
+				889E45502A12906700192C67 /* NSNotificationCenter.swift in Sources */,
 				885F573E2A046BE7005727BB /* ViewController.swift in Sources */,
 				885F573A2A046BE7005727BB /* AppDelegate.swift in Sources */,
 				885F573C2A046BE7005727BB /* SceneDelegate.swift in Sources */,
