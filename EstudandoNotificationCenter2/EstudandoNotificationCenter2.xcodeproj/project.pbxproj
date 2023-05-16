@@ -15,6 +15,7 @@
 		889E456A2A12A01D00192C67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889E45682A12A01D00192C67 /* LaunchScreen.storyboard */; };
 		889E45732A12A05600192C67 /* Tela02ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889E45722A12A05600192C67 /* Tela02ViewController.swift */; };
 		889E45752A12A06800192C67 /* Tela02ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889E45742A12A06800192C67 /* Tela02ViewController.storyboard */; };
+		889E45772A13E9C700192C67 /* NSNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889E45762A13E9C700192C67 /* NSNotificationCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		889E456B2A12A01D00192C67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		889E45722A12A05600192C67 /* Tela02ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02ViewController.swift; sourceTree = "<group>"; };
 		889E45742A12A06800192C67 /* Tela02ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela02ViewController.storyboard; sourceTree = "<group>"; };
+		889E45762A13E9C700192C67 /* NSNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				889E45662A12A01D00192C67 /* Assets.xcassets */,
 				889E45682A12A01D00192C67 /* LaunchScreen.storyboard */,
 				889E456B2A12A01D00192C67 /* Info.plist */,
+				889E45762A13E9C700192C67 /* NSNotificationCenter.swift */,
 			);
 			path = EstudandoNotificationCenter2;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				889E45732A12A05600192C67 /* Tela02ViewController.swift in Sources */,
+				889E45772A13E9C700192C67 /* NSNotificationCenter.swift in Sources */,
 				889E45622A12A01B00192C67 /* ViewController.swift in Sources */,
 				889E455E2A12A01B00192C67 /* AppDelegate.swift in Sources */,
 				889E45602A12A01B00192C67 /* SceneDelegate.swift in Sources */,

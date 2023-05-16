@@ -17,6 +17,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func tappedAvancarButton(_ sender: UIButton) {
+        let vc = UIStoryboard(name: Tela02ViewController.identifier, bundle: nil).instantiateViewController(identifier: Tela02ViewController.identifier) as? Tela02ViewController
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    func addObserver(){
+        NotificationCenter.default.addObserver(self, selector: #selector(tappedVoltarButton), name: .texto, object: nil )
+    }
+    
+    @objc func tappedVoltarButton(){
+        let textoTextField: String = nomeLabel.text ?? <#default value#>!
+        textoTextField.append(.texto)
+            
+        
     }
     
 }
