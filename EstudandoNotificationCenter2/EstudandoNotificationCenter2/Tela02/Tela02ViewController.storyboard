@@ -29,20 +29,42 @@
                                     <action selector="tappedVoltarButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Aee-os-6d4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FR-Tw-FTP">
+                                <rect key="frame" x="159" y="465" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedAddButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="R1X-HB-Edx"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Mk-94-E7Q">
+                                <rect key="frame" x="25" y="334" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0Mk-94-E7Q" secondAttribute="trailing" constant="25" id="4dF-q7-lNN"/>
+                            <constraint firstItem="1FR-Tw-FTP" firstAttribute="top" secondItem="0Mk-94-E7Q" secondAttribute="bottom" constant="97" id="6NO-19-f4Z"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="g9X-Zb-UHd" secondAttribute="bottom" constant="596" id="8RJ-DT-zPv"/>
+                            <constraint firstItem="0Mk-94-E7Q" firstAttribute="top" secondItem="g9X-Zb-UHd" secondAttribute="bottom" constant="112" id="8mH-as-hHn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1FR-Tw-FTP" secondAttribute="trailing" constant="159" id="HHb-xg-OXC"/>
                             <constraint firstItem="Fsg-fy-9f8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="J6j-tZ-PqA"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Fsg-fy-9f8" secondAttribute="trailing" constant="25" id="RwA-0V-BMO"/>
+                            <constraint firstItem="0Mk-94-E7Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="Wno-mX-HVo"/>
                             <constraint firstItem="g9X-Zb-UHd" firstAttribute="top" secondItem="Fsg-fy-9f8" secondAttribute="bottom" constant="69" id="Y4T-Mh-RZQ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="g9X-Zb-UHd" secondAttribute="trailing" constant="159" id="aqJ-I1-bPa"/>
+                            <constraint firstItem="1FR-Tw-FTP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="159" id="c3o-LD-e2o"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1FR-Tw-FTP" secondAttribute="bottom" constant="318" id="hgy-hf-LUP"/>
                             <constraint firstItem="g9X-Zb-UHd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="159" id="s4Q-P8-WJR"/>
                             <constraint firstItem="Fsg-fy-9f8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="yE8-nx-Qvz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="1FR-Tw-FTP" id="HHo-Kz-1y7"/>
+                        <outlet property="nome2TextField" destination="0Mk-94-E7Q" id="nMd-CX-9r2"/>
                         <outlet property="nomeTextField" destination="Fsg-fy-9f8" id="riz-Dl-l7V"/>
                         <outlet property="voltarButton" destination="g9X-Zb-UHd" id="r0A-r2-A46"/>
                     </connections>

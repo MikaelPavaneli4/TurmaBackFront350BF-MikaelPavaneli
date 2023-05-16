@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .gray
+        addObserver()
     }
 
     @IBAction func tappedAvancarButton(_ sender: UIButton) {
@@ -24,14 +25,17 @@ class ViewController: UIViewController {
     
     func addObserver(){
         NotificationCenter.default.addObserver(self, selector: #selector(tappedVoltarButton), name: .texto, object: nil )
+        NotificationCenter.default.addObserver(self, selector: #selector(tappedAddButton), name: .cachorro, object: nil)
     }
     
-    @objc func tappedVoltarButton(){
-        let textoTextField: String = nomeLabel.text ?? <#default value#>!
-        textoTextField.append(.texto)
-            
-        
+    @objc func tappedVoltarButton(notification: NSNotification){
+        let textoTextField = notification.object as? String
+        nomeLabel.text = textoTextField
     }
     
+    @objc func tappedAddButton(notification: NSNotification){
+        let nome = notification.object as? String
+        nomeLabel.text = nome
+    }
 }
 

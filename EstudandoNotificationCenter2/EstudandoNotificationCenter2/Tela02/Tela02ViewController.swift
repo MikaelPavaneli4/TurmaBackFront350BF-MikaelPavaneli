@@ -11,6 +11,8 @@ class Tela02ViewController: UIViewController {
 
     static let identifier = "Tela02ViewController"
     
+    @IBOutlet weak var nome2TextField: UITextField!
+    @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var voltarButton: UIButton!
     @IBOutlet weak var nomeTextField: UITextField!
     override func viewDidLoad() {
@@ -19,10 +21,15 @@ class Tela02ViewController: UIViewController {
         
     }
     
+    @IBAction func tappedAddButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        NotificationCenter.default.post(name: .cachorro, object: nome2TextField.text)
+        
+    }
     @IBAction func tappedVoltarButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
         NotificationCenter.default.post(name: .texto, object: nomeTextField.text)
-        
+       
     }
     
 

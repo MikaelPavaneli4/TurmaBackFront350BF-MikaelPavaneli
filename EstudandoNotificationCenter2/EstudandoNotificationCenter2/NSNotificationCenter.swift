@@ -11,5 +11,5 @@ extension NSNotification.Name {
     
     static let texto = NSNotification.Name("")
     
-    
+    static let cachorro = NSNotification.Name("")
 }
