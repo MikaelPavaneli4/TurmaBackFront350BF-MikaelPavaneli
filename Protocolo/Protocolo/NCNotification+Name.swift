@@ -10,5 +10,5 @@ import Foundation
 
 extension NSNotification.Name {
     
-   static var nome = NSNotification.Name("")
+   static var nome = NSNotification.Name("Cadastrado")
 }

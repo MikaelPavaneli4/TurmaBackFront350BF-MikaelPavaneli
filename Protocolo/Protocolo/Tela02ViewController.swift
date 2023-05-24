@@ -16,7 +16,7 @@ class Tela02ViewController: UIViewController {
     @IBOutlet weak var avancarButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+addObserver()
         // Do any additional setup after loading the view.
     }
     
@@ -30,7 +30,7 @@ class Tela02ViewController: UIViewController {
     }
     
     @objc func cadastrarNome(_ notification: NSNotification){
-        var texto = notification.object as? String
+        let texto = notification.object as? String
         nomeLabel.text = texto
         view.backgroundColor = .red
     }
