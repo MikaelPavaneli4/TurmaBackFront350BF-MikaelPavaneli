@@ -7,12 +7,18 @@
 
 import UIKit
 
+protocol ViewControllerProtocol: AnyObject {
+    func tappedAdicionarButton()
+    func texte(nome: String)
+}
+
 class ViewController: UIViewController {
    @IBOutlet weak var adicionarButton: UIButton!
     @IBOutlet weak var nomeTextField: UITextField!
     
     static let identifier = "ViewController"
    
+    weak var delegate: ViewControllerProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +30,9 @@ class ViewController: UIViewController {
     
     @IBAction func tappedAdicionarButton(_ sender: UIButton) {
         dismiss(animated: true)
-        
-        NotificationCenter.default.post(name: .nome, object: nomeTextField.text)
+        delegate?.tappedAdicionarButton()
+        delegate?.texte(nome: nomeTextField.text ?? "")
+     //   NotificationCenter.default.post(name: .nome, object: nomeTextField.text)
         
     }
     

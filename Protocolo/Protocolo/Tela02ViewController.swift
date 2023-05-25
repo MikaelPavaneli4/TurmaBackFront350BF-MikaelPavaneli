@@ -16,23 +16,38 @@ class Tela02ViewController: UIViewController {
     @IBOutlet weak var avancarButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-addObserver()
+//addObserver()
         // Do any additional setup after loading the view.
     }
     
     @IBAction func tappedAvancarButton(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: ViewController.identifier) as? ViewController
         present(vc ?? UIViewController(), animated: true)
+        vc?.delegate = self
     }
     
-    private func addObserver() {
-        NotificationCenter.default.addObserver(self, selector: #selector(cadastrarNome), name: .nome, object: nil)
-    }
-    
-    @objc func cadastrarNome(_ notification: NSNotification){
-        let texto = notification.object as? String
-        nomeLabel.text = texto
-        view.backgroundColor = .red
-    }
+//    private func addObserver() {
+//        NotificationCenter.default.addObserver(self, selector: #selector(cadastrarNome), name: .nome, object: nil)
+//    }
+//
+//    @objc func cadastrarNome(_ notification: NSNotification){
+//        let texto = notification.object as? String
+//        nomeLabel.text = texto
+//        view.backgroundColor = .red
+//    }
 
+}
+
+
+extension Tela02ViewController: ViewControllerProtocol {
+    func texte(nome: String) {
+        nomeLabel.text = nome
+    }
+    
+   
+    func tappedAdicionarButton() {
+        view.backgroundColor = .blue
+      //  nomeLabel.text = "Protocolo é foda"
+    }
+    
 }
